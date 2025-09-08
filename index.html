@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroMart - Electronics Gadgets Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">ElectroMart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Nav -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Right Nav -->
+                <form class="d-flex me-3">
+                    <input class="form-control me-2 bg-light" type="search" placeholder="Search gadgets...">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <a href="wishlist.html" class="btn btn-outline-light me-2"><i class="bi bi-heart"></i> Wishlist</a>
+                <a href="cart.html" class="btn btn-outline-light me-2"><i class="bi bi-cart3"></i> Cart</a>
+
+                <!-- Profile Dropdown -->
+                <div class="dropdown">
+                    <a class="btn btn-warning dropdown-toggle" href="#" id="profileDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-person"></i> Account
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="orders.html">My Orders</a></li>
+                        <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HERO CAROUSEL ===== -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.augustman.com/wp-content/uploads/sites/6/2023/12/19200126/upcoming-phones-2024.jpg"
+                    class="d-block w-100" alt="Latest Smartphones">
+                <div class="carousel-caption">
+                    <h2>Latest Smartphones</h2>
+                    <p>Cutting-edge technology at unbeatable prices.</p>
+                    <a href="products.html" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://o.aolcdn.com/images/dims?quality=85&image_uri=https:%2F%2Fo.aolcdn.com%2Fimages%2Fdims%3Fcrop%3D1800%252C1100%252C0%252C0%26quality%3D85%26format%3Djpg%26resize%3D1600%252C978%26image_uri%3Dhttps%253A%252F%252Fs.yimg.com%252Fos%252Fcreatr-uploaded-images%252F2019-07%252F379d58d0-aa5d-11e9-beff-7a3b25ef2046%26client%3Da1acac3e1b3290917d92%26signature%3D47abd0dfc739c90271f47358f8f52a55f9265602&client=amp-blogside-v2&signature=69987cd3a527c27862efdf14839b5490a0aba365"
+                    class="d-block w-100" alt="Smart Laptops">
+                <div class="carousel-caption">
+                    <h2>Smart Laptops</h2>
+                    <p>Work & play with high-performance gadgets.</p>
+                    <a href="products.html" class="btn btn-primary">Explore</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.rappler.com/tachyon/2022/12/Gadgets-December-14-2022.jpg" class="d-block w-100"
+                    alt="Accessories">
+                <div class="carousel-caption">
+                    <h2>Trendy Accessories</h2>
+                    <p>Style meets innovation in our latest collection.</p>
+                    <a href="products.html" class="btn btn-primary">View Collection</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- ===== DEALS OF THE DAY ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Deals of the Day</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6 ">
+                    <div class="card h-100">
+                        <a href="products.html"><img
+                                src="https://candid.technology/wp-content/uploads/2021/06/Oneplus-nord-ce-5g-2.jpg"
+                                class="card-img-top" alt="Deal"></a>
+                        <div class="card-body text-center">
+                            <h6>OnePlus Nord CE</h6>
+                            <p class="text-muted"><del>$399</del> <span class="text-danger fw-bold">$299</span></p>
+                            <span class="badge bg-success">25% OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.pngkit.com/png/detail/186-1861033_hp-pavilion-gaming-laptop-hp-gaming-pavilion-15.png" class="card-img-top" alt="Deal">
+                        <div class="card-body text-center">
+                            <h6>HP Pavilion Laptop</h6>
+                            <p class="text-muted"><del>$799</del> <span class="text-danger fw-bold">$649</span></p>
+                            <span class="badge bg-success">18% OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://m.media-amazon.com/images/I/61QMPHGyc2L._SL1500_.jpg" class="card-img-top" alt="Deal">
+                        <div class="card-body text-center">
+                            <h6>Noise Smartwatch</h6>
+                            <p class="text-muted"><del>$199</del> <span class="text-danger fw-bold">$129</span></p>
+                            <span class="badge bg-success">35% OFF</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.bhphotovideo.com/images/images1000x1000/jbl_jblboomboxblkam_boombox_portable_bluetooth_speaker_1359585.jpg" class="card-img-top" alt="Deal">
+                        <div class="card-body text-center">
+                            <h6>JBL Bluetooth Speaker</h6>
+                            <p class="text-muted"><del>$149</del> <span class="text-danger fw-bold">$99</span></p>
+                            <span class="badge bg-success">30% OFF</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ===== BRANDS ===== -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Top Brands</h2>
+            <div class="row g-4 align-items-center">
+                <div class="col"><img src="https://static.vecteezy.com/system/resources/previews/022/100/931/non_2x/dell-logo-transparent-free-png.png" class="img-fluid" alt="Brand"></div>
+                <div class="col"><img src="https://static.vecteezy.com/system/resources/previews/017/221/775/non_2x/apple-logo-free-png.png" class="img-fluid" alt="Brand"></div>
+                <div class="col"><img src="https://logos-world.net/wp-content/uploads/2020/12/JBL-Logo.png" class="img-fluid" alt="Brand"></div>
+                <div class="col"><img src="https://logos-world.net/wp-content/uploads/2020/11/Hewlett-Packard-Logo-2008-2014.png" class="img-fluid" alt="Brand"></div>
+                <div class="col"><img src="https://www.oneplus.com/content/dam/oasis/page/common/logo/OnePlus_Logo.png" class="img-fluid" alt="Brand"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SHOP BY CATEGORIES ===== -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Shop by Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card category-card h-100 text-center">
+                        <img src="https://techeconomy.ng/wp-content/uploads/2023/12/The-Most-Popular-Phone-Brands-in-Every-Country-in-2023.jpg" class="card-img-top" alt="Mobiles">
+                        <div class="card-body">
+                            <h5>Mobiles</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card h-100 text-center">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.SBbBTtTjyCeeXbrm4lwC8AHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Laptops">
+                        <div class="card-body">
+                            <h5>Laptops</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card h-100 text-center">
+                        <img src="https://images.bauerhosting.com/legacy/media/5ecf/ec43/d192/6f11/3445/bf35/Best-Wireless-Headsets.png?ar=16:9&fit=crop&crop=top&auto=format&w=992&q=80" class="card-img-top" alt="Headphones">
+                        <div class="card-body">
+                            <h5>Headphones</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card category-card h-100 text-center">
+                        <img src="https://nextluxury.com/wp-content/uploads/Top-15-Fashion-Accessories-For-Men-1.jpg" class="card-img-top" alt="Accessories">
+                        <div class="card-body">
+                            <h5>Accessories</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Featured Products</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.tomshw.it/storage/media/2023/10/29/iphone-14-pro.jpg" class="card-img-top" alt="Product">
+                        <div class="card-body text-center">
+                            <h6>iPhone 14 Pro</h6>
+                            <p class="text-muted">$999</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://cdn.mos.cms.futurecdn.net/FSWvBu8Ci8NGV5z8EzqiTE.jpg" class="card-img-top" alt="Product">
+                        <div class="card-body text-center">
+                            <h6>MacBook Air M2</h6>
+                            <p class="text-muted">$1299</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.AH3e2zkPKaDMNdR2-LEkpwHaE8?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Product">
+                        <div class="card-body text-center">
+                            <h6>Sony WH-1000XM5</h6>
+                            <p class="text-muted">$349</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.A0gX5g00fTDTwc2e2jt7UgHaHa?cb=ucfimgc2&w=1080&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="Product">
+                        <div class="card-body text-center">
+                            <h6>Samsung Galaxy Watch</h6>
+                            <p> class="text-muted">$249</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- ===== New Arraivals ===== -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">New Arrivals</h2>
+            <div class="row g-4">
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.cnet.com/a/img/resize/62ec77ad31c16d930d165e3d463a101ec3a25af7/hub/2022/10/06/af4bcb99-1026-468f-83b9-271a06f1a07d/screen-shot-2022-10-06-at-7-21-29-am.png?auto=webp&width=1200" class="card-img-top" alt="New Arrival">
+                        <div class="card-body text-center">
+                            <h6>Google Pixel 7</h6>
+                            <p class="text-muted">$599</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.windowscentral.com/sites/wpcentral.com/files/styles/larger_wm_brb/public/field/image/2016/12/dell-xps-13-hero.jpg?itok=PcpkH19l" class="card-img-top" alt="New Arrival">
+                        <div class="card-body text-center">
+                            <h6>Dell XPS 13</h6>
+                            <p class="text-muted
+">$999</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://www.epic.com.mt/wp-content/uploads/2023/03/AirPods_Pro_2nd-Gen-1.png" class="card-img-top" alt="New Arrival">
+                        <div class="card-body text-center">
+                            <h6>Apple AirPods Pro</h6>
+                            <p class="text-muted">$249</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6">
+                    <div class="card h-100">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.-_3Y46lxxHsR8CgNllbGOgHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="New Arrival">
+                        <div class="card-body text-center">
+                            <h6>Fitbit Charge 5</h6>
+                            <p class="text-muted">$179</p>
+                            <a href="product-detail.html" class="btn btn-sm btn-primary">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>ElectroMart</h5>
+                    <p>Your trusted destination for gadgets & electronics.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-light text-decoration-none">Products</a>
+                        </li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="mb-0 text-center">&copy; 2025 ElectroMart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

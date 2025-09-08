@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* General Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #000000 !important;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+}
+
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover {
+  color: #ffc107 !important;
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn-outline-light {
+  border: 1px solid #ffc107 !important;
+  color: #000 !important;
+  background-color: #fff !important;
+  border-radius: 20px;
+  padding: 5px 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffc107 !important;
+  color: #000 !important;
+}
+
+/* Profile Dropdown */
+.dropdown-menu {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-item:hover {
+  background-color: #ffc107;
+  color: #000;
+  padding-left: 20px;
+}
+
+/* Carousel */
+.carousel-item img {
+  height: 70vh;
+  object-fit: cover;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  color: #fff;
+}
+
+.carousel-item img {
+  filter: brightness(75%);
+}
+
+/* Deals Section */
+.deals-section {
+  background-color: #f8f9fa;
+}
+
+.deal-card {
+  background-color: #ffffff;
+  border: 1px solid #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(255, 193, 7, 0.3);
+}
+
+.deal-card img {
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 2px solid #ffc107;
+}
+
+/* Category Cards */
+.category-card img {
+  height: 180px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Product Cards */
+.card img {
+  height: 200px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card .btn-primary {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+}
+
+.card .btn-primary:hover {
+  background-color: #e0a800;
+  color: #000;
+}
+
+/* Newsletter Section */
+.newsletter {
+  background: url('assets/images/newsletter-bg.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+.newsletter::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.newsletter h2,
+.newsletter p {
+  color: #fff;
+}
+
+.newsletter .form-control {
+  border-radius: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #fff !important;
+  color: #000 !important;
+  margin: 0 !important;
+}
+
+
+
+footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffc107 !important;
+}
+
+
+

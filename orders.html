@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - ElectroMart</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">ElectroMart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Nav -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Right Nav -->
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search gadgets...">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <a href="wishlist.html" class="btn btn-outline-light me-2"><i class="bi bi-heart"></i> Wishlist</a>
+                <a href="cart.html" class="btn btn-outline-light me-2"><i class="bi bi-cart3"></i> Cart</a>
+
+                <!-- Profile Dropdown -->
+                <div class="dropdown">
+                    <a class="btn btn-warning dropdown-toggle" href="#" id="profileDropdown" data-bs-toggle="dropdown">
+                        <i class="bi bi-person"></i> Account
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="orders.html">My Orders</a></li>
+                        <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- ===== MY ORDERS SECTION ===== -->
+    <section class="my-orders py-5 bg-light text-black">
+        <div class="container">
+            <h2 class="mb-4 fw-bold text-warning">My Orders</h2>
+            <div class="table-responsive shadow-lg rounded">
+                <table class="table table-hover align-middle text-white mb-0">
+                    <thead class="table-warning text-dark">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Date</th>
+                            <th>Items</th>
+                            <th>Status</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Delivered -->
+                        <tr class="order-row">
+                            <td>#EM123456</td>
+                            <td>02-Sep-2025</td>
+                            <td>Smartphone, Headphones</td>
+                            <td><span class="badge bg-success">Delivered</span></td>
+                            <td>$520</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-warning text-dark fw-bold">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-sm btn-outline-light">
+                                    <i class="bi bi-arrow-repeat"></i> Reorder
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Processing -->
+                        <tr class="order-row">
+                            <td>#EM123789</td>
+                            <td>28-Aug-2025</td>
+                            <td>Laptop</td>
+                            <td><span class="badge bg-warning text-dark">Processing</span></td>
+                            <td>$999</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-warning text-dark fw-bold">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-sm btn-outline-light">
+                                    <i class="bi bi-arrow-repeat"></i> Reorder
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!-- Cancelled -->
+                        <tr class="order-row">
+                            <td>#EM124000</td>
+                            <td>20-Aug-2025</td>
+                            <td>Smartwatch</td>
+                            <td><span class="badge bg-danger">Cancelled</span></td>
+                            <td>$199</td>
+                            <td>
+                                <button class="btn btn-sm btn-outline-warning text-dark fw-bold">
+                                    <i class="bi bi-eye"></i> View
+                                </button>
+                                <button class="btn btn-sm btn-outline-light">
+                                    <i class="bi bi-arrow-repeat"></i> Reorder
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>ElectroMart</h5>
+                    <p>Your trusted destination for gadgets & electronics.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-light text-decoration-none">Products</a>
+                        </li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="mb-0 text-center">&copy; 2025 ElectroMart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

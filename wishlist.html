@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Wishlist - ElectroMart</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-light">
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">ElectroMart</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Left Nav -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+
+                <!-- Right Nav -->
+                <form class="d-flex me-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search gadgets..." aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+
+                <a href="wishlist.html" class="btn btn-outline-light me-2 active">
+                    <i class="bi bi-heart"></i> Wishlist
+                </a>
+                <a href="cart.html" class="btn btn-outline-light me-2">
+                    <i class="bi bi-cart3"></i> Cart
+                </a>
+
+                <!-- Profile Dropdown -->
+                <div class="dropdown">
+                    <a class="btn btn-warning dropdown-toggle" href="#" role="button" id="profileDropdown"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person"></i> Account
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                        <li><a class="dropdown-item" href="register.html">Register</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
+                        <li><a class="dropdown-item" href="orders.html">My Orders</a></li>
+                        <li><a class="dropdown-item" href="logout.html">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== WISHLIST ===== -->
+    <div class="container my-5">
+        <h3 class="fw-bold mb-4">My Wishlist</h3>
+
+        <!-- Wishlist Item 1 -->
+        <div class="card mb-3 border-1 border-bottom p-3">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.OdhxuWacOkJQ07HBAiMTAQHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded" alt="iPhone 14 Pro">
+                </div>
+                <div class="col-md-7">
+                    <h6 class="fw-semibold">iPhone 14 Pro</h6>
+                    <p class="text-muted mb-1">$999</p>
+                    <p class="text-success small">In stock</p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold text-dark">
+                        <i class="bi bi-cart-plus"></i> Move to Cart
+                    </a>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                        <i class="bi bi-trash"></i> Remove
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wishlist Item 2 -->
+        <div class="card mb-3 border-1 border-bottom p-3">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.GRNyMIrtkhT7qJKCi4FhRgHaFs?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded" alt="MacBook Air M2">
+                </div>
+                <div class="col-md-7">
+                    <h6 class="fw-semibold">MacBook Air M2</h6>
+                    <p class="text-muted mb-1">$1299</p>
+                    <p class="text-success small">In stock</p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold text-dark">
+                        <i class="bi bi-cart-plus"></i> Move to Cart
+                    </a>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                        <i class="bi bi-trash"></i> Remove
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wishlist Item 3 -->
+        <div class="card mb-3 border-1 border-bottom p-3">
+            <div class="row g-3 align-items-center">
+                <div class="col-md-2">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP._seOM5GkInTufcP1rCAGrAHaHa?cb=ucfimgc2&rs=1&pid=ImgDetMain&o=7&rm=3" class="img-fluid rounded" alt="Sony WH-1000XM5">
+                </div>
+                <div class="col-md-7">
+                    <h6 class="fw-semibold">Sony WH-1000XM5</h6>
+                    <p class="text-muted mb-1">$349</p>
+                    <p class="text-success small">In stock</p>
+                </div>
+                <div class="col-md-3 text-end">
+                    <a href="cart.html" class="btn btn-warning w-100 mb-2 fw-bold text-dark">
+                        <i class="bi bi-cart-plus"></i> Move to Cart
+                    </a>
+                    <a href="#" class="btn btn-outline-dark w-100">
+                        <i class="bi bi-trash"></i> Remove
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Empty Wishlist -->
+        <div class="text-center mt-5">
+            <p class="text-muted">Don’t have anything saved yet?</p>
+            <a href="products.html" class="btn btn-outline-warning fw-bold">Browse Products</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h5>ElectroMart</h5>
+                    <p>Your trusted destination for gadgets & electronics.</p>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-light text-decoration-none">Products</a>
+                        </li>
+                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Customer Service</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Help Center</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Returns</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Shipping</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Follow Us</h6>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="mb-0 text-center">&copy; 2025 ElectroMart. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
